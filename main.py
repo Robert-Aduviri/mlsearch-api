@@ -13,12 +13,12 @@ def ping():
     return 'ML Search: It Works!'
 
 
-@app.route('/search')
+@app.route('/search', methods=['GET'])
 def search():
     query = request.args.get('query', '')
-    logger.info(f'request query: {query}')
+    logger.info(f'Request query: {query}')
     results = jsonify(fetch_github(query))
-    logger.info(f'response json {results}')
+    logger.info(f'Response json {results}')
     return results
 
 

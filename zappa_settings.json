@@ -8,6 +8,7 @@
         "s3_bucket": "zappa-mlsearch",
         "aws_environment_variables": {
             "GITHUB_URL": "in:readme+in:description"
-        }
+        },
+        "xray_tracing": true
     }
 }
