@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "app_function": "main.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "mlsearch-api",
+        "runtime": "python3.7",
+        "s3_bucket": "zappa-mlsearch",
+        "aws_environment_variables": {
+            "GITHUB_URL": "in:readme+in:description"
+        },
+        "xray_tracing": true
+    }
+}
